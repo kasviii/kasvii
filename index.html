@@ -69,13 +69,7 @@
   @media (max-width:760px){ .nav-links li:not(.nav-cta-item){ display:none; } }
 
   /* HERO */
-  #hero{ padding:9.5rem 0 5rem; }
-  .eyebrow{
-    font-family:'IBM Plex Mono', monospace; font-size:0.76rem; font-weight:500;
-    color:var(--accent); letter-spacing:0.06em; text-transform:uppercase;
-    margin-bottom:1.4rem; display:flex; align-items:center; gap:0.5rem;
-  }
-  .eyebrow::before{ content:''; width:7px; height:7px; background:var(--accent); border-radius:50%; display:inline-block; }
+  #hero{ padding:10.5rem 0 5rem; }
   h1{
     font-family:'Fraunces', serif; font-weight:500;
     font-size:clamp(2.6rem, 6vw, 4.1rem);
@@ -112,12 +106,12 @@
   }
   .status-box .status-head span:last-child{ color:var(--accent); }
   .status-row{
-    display:flex; justify-content:space-between; padding:0.55rem 1rem;
+    display:flex; gap:1rem; padding:0.62rem 1rem;
     border-bottom:1px solid var(--line);
   }
   .status-row:last-child{ border-bottom:none; }
-  .status-row .k{ color:var(--ink-soft); }
-  .status-row .v{ color:var(--ink); font-weight:500; }
+  .status-row .k{ color:var(--ink-soft); flex:0 0 92px; }
+  .status-row .v{ color:var(--ink); font-weight:500; text-align:right; flex:1; }
   .status-row .v.ok::before{ content:'✓ '; color:var(--accent); }
 
   /* SECTION shell */
@@ -139,15 +133,15 @@
   #about .about-body p{ margin-bottom:1.1rem; }
   #about .about-body strong{ color:var(--ink); font-weight:600; }
   .facts{
-    margin-top:2.2rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:0; border-top:1px solid var(--line);
+    margin-top:2.4rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:1px; background:var(--line); border:1px solid var(--line);
   }
-  .fact{ padding:1rem 0; border-bottom:1px solid var(--line); }
+  .fact{ background:var(--paper); padding:1.3rem 1.4rem; }
   .fact-label{
     font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.05em;
-    text-transform:uppercase; color:var(--ink-faint); margin-bottom:0.3rem;
+    text-transform:uppercase; color:var(--ink-faint); margin-bottom:0.5rem;
   }
-  .fact-value{ font-size:0.92rem; font-weight:500; }
+  .fact-value{ font-size:0.92rem; font-weight:500; line-height:1.5; }
 
   /* PROJECTS */
   .project{
@@ -266,7 +260,6 @@
 
 <main>
   <section id="hero" class="wrap">
-    <div class="eyebrow">Computer Science · AI &amp; Backend Systems</div>
     <h1>I build systems that <em>check their own work.</em></h1>
     <p class="hero-sub">
       Third-year CS undergraduate at Manipal University Jaipur. My work sits between explainable AI, LLM safety, and production ML — models that don't just predict, but show why, and systems that catch their own mistakes before you do.
@@ -279,9 +272,9 @@
     <div class="status-box">
       <div class="status-head"><span>~/kasvi status --check</span><span>ALL PASSING</span></div>
       <div class="status-row"><span class="k">Patents</span><span class="v ok">1 published, 2025</span></div>
-      <div class="status-row"><span class="k">Research</span><span class="v ok">Accepted — AiCCONs 2026</span></div>
-      <div class="status-row"><span class="k">Recognition</span><span class="v ok">Top 2% — Student Excellence '25 &amp; '26</span></div>
-      <div class="status-row"><span class="k">Availability</span><span class="v ok">Open to internships &amp; research</span></div>
+      <div class="status-row"><span class="k">Research</span><span class="v ok">Presented, AiCCONs 2026</span></div>
+      <div class="status-row"><span class="k">Awards</span><span class="v ok">Top 2%, '25 &amp; '26</span></div>
+      <div class="status-row"><span class="k">Status</span><span class="v ok">Final-year, open to roles</span></div>
     </div>
   </section>
 
@@ -300,7 +293,7 @@
         Lately I keep gravitating toward the same problem from different angles: how do you trust a system you didn't watch reason? A model that explains its diagnosis with Grad-CAM, an LLM gateway that blocks what it shouldn't say, a RAG pipeline that catches its own hallucinations before they reach a user — same question, different systems.
       </p>
       <p>
-        I hold a <strong>published Indian patent</strong>, have research accepted at AiCCONs 2026, and currently work as a web developer at an early-stage startup while finishing my degree.
+        I hold a <strong>published Indian patent</strong> and presented research at AiCCONs 2026. I'm heading into my final year, with internship experience spanning full-stack development, backend systems, and startup web engineering.
       </p>
     </div>
     <div class="facts reveal">
@@ -317,8 +310,8 @@
         <div class="fact-value">Jaipur, India · Open to relocation</div>
       </div>
       <div class="fact">
-        <div class="fact-label">Currently</div>
-        <div class="fact-value">Web Developer @ Hoose</div>
+        <div class="fact-label">Status</div>
+        <div class="fact-value">Final-year student, open to roles</div>
       </div>
     </div>
   </section>
