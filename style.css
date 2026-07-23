@@ -945,3 +945,61 @@ footer{
 }
 
 }
+/* ===== Animations ===== */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:.8s ease;
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+}
+
+.active{
+
+color:white !important;
+}
+
+.cursor{
+
+position:fixed;
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+background:rgba(110,168,254,.4);
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+backdrop-filter:blur(5px);
+
+z-index:99999;
+
+transition:
+transform .08s linear,
+width .2s,
+height .2s;
+}
+
+.project-card{
+
+transform-style:preserve-3d;
+}
+
+.hero{
+
+transition:opacity .25s linear;
+}
