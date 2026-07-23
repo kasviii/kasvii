@@ -1,5 +1,23 @@
-# Portfolio
+# Kasvi Rajwar — Portfolio
 
-Open index.html in a browser or deploy to GitHub Pages/Vercel.
+Personal portfolio site, built to showcase my work in machine learning, explainable AI, and backend engineering.
 
-Replace placeholder project links, resume.pdf, and assets with your own.
+**Live:** https://kasviii.github.io/kasvii/
+
+## Built with
+- HTML5, CSS3, vanilla JavaScript
+- Google Fonts (Inter)
+- No build step, no dependencies
+
+## Sections
+- About & core skills
+- Work experience
+- Featured projects
+- Research & publications
+- Patent
+- Achievements & leadership
+- Contact
+
+
+## Contact
+[Email](mailto:kasvi.r04@gmail.com) · [LinkedIn](https://linkedin.com/in/kasvi-rajwar-85747228a) · [GitHub](https://github.com/kasviii)
